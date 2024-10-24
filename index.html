@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff1493;
+        }
+        p {
+            font-size: 20px;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function handleNo() {
+            document.getElementById("proposal").classList.add("hidden");
+            document.getElementById("response").classList.remove("hidden");
+        }
+    </script>
+</head>
+<body>
+
+    <div id="proposal">
+        <h1>Will You Be My Girlfriend?</h1>
+        <p>I've enjoyed every moment we’ve spent together, and I want to make it official.</p>
+        <button class="button" onclick="location.href='yay!.html'" id="yes">Yes!</button>
+
+        
+
+    </div>
+
+    <div id="response" class="hidden">
+        <h1>That's Okay!</h1>
+        <p>Let's just enjoy being friends!</p>
+        <button class="button" onclick="location.href='no.html'">No, thanks!</button>
+
+    </div>
+
+</body>
+</html>
